@@ -53,14 +53,14 @@ class AboutTuples(Koan):
         lat = (37, 14, 6, 'N')
         lon = (115, 48, 40, 'W')
         place = ('Area 51', lat, lon)
-        self.assertEqual(("Area 51", (37, 14, 6, 'N'), (115, 48, 40, 'W'), place)
-
+        self.assertEqual(("Area 51",(37, 14, 6, 'N'), (115, 48, 40, 'W')),  place)
+        
     def test_tuples_are_good_for_representing_records(self):
+        
         locations = [
             ("Illuminati HQ", (38, 52, 15.56, 'N'), (77, 3, 21.46, 'W')),
             ("Stargate B", (41, 10, 43.92, 'N'), (1, 49, 34.29, 'W')),
         ]
-        
         locations.append( 
             ("Cthulhu", (26, 40, 1, 'N'), (70, 45, 7, 'W'))
         )
